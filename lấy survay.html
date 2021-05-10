@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baitap</title>
+    <style>
+        .dai {
+            width: 40%;
+        }
+        .ngan{
+            width: 35px;
+        }
+        table, th, td{
+            border:1px solid #ccc;
+        }
+        table{
+            border-collapse:collapse;
+            width:40%;
+        }
+        th, td{
+            text-align:left;
+            padding:10px;
+        }
+        tr:hover{
+            background-color:#ddd;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<h2>Market Research Survey</h2>
+<p>Please take a few moments to complete this satisfaction survey.</p>
+<hr>
+<form method="post">
+    What is your age range?<br>
+    <select class="dai">
+        <option value="18-24">18-24</option>
+        <option value="25-34">25-34</option>
+        <option value="35-50">35-50</option>
+        <option value="50+">50+</option>
+    </select><br><br>
+    What is your yearly income range?<br>
+    <select class="dai">
+        <option value="$0 - $25,000">$0 - $25,000</option>
+        <option value="$25,001 - $50,000">$25,001 - $50,000</option>
+        <option value="$50,001 - $100,000">$50,001 - $100,000</option>
+        <option value="$100,000+">$100,000+</option>
+    </select><br><br>
+    Gender Identity<br>
+    <input type="checkbox" value="male"><label>  Male</label><br><br>
+    <input type="checkbox" value="female"><label>  Female</label><br><br>
+    <input type="checkbox" value="Nonbinary"><label>  Nonbinary</label><br><br>
+    <input type="checkbox" value="orther"><label>  orther</label><br><br>
+    <input type="text" name="orther" maxlength="250"><br>
+    please choose one.<br><br>
+    Which of the following products have your purchased in the last 2 months. Please check all that apply.<br>
+    <input type="checkbox" name="checkbox">Product 1<br>
+    <input type="checkbox" name="checkbox">Product 2<br>
+    <input type="checkbox" name="checkbox">Product 3<br><br>
+    How often would you use our new product?<<br><br>
+    <input type="radio" name="offten"> Daily<br>
+    <input type="radio" name="offten"> Weekly<br>
+    <input type="radio" name="offten"> Monthly<br><br>
+    What would you pay for the new product?<br>
+    $<input type="text" name="dollars" placeholder="dollars">.<input  type="text" name="cents" placeholder="cents" class="ngan"><br><br>
+    What features would you like to see in the new product.<br>
+    <textarea cols="80" rows="8"></textarea><br>
+    please rate your level of agreement with the flowwing startments<br>
+    <table>
+        <tr>
+            <th></th>
+            <th>Strongly disagree</th>
+            <th>Disagree</th>
+            <th>Agree</th>
+            <th>Strongly agree</th>
+        </tr>
+        <tr>
+            <td>our froducts are priced fiarly.</td>
+            <td>
+                <input type="checkbox" name="strongly disagree"> 1
+            </td>
+            <td>
+                <input type="checkbox" name="disagree"> 2
+            </td>
+            <td>
+                <input type="checkbox" name="agree"> 3
+            </td>
+            <td>
+                <input type="checkbox" name="strong agree"> 4
+            </td>
+        </tr>
+        <tr>
+            <td>our froducts are hight fiarly</td>
+            <td>
+                <input type="checkbox" name="strongly disagree"> 1
+            </td>
+            <td>
+                <input type="checkbox" name="disagree"> 2
+            </td>
+            <td>
+                <input type="checkbox" name="agree"> 3
+            </td>
+            <td>
+                <input type="checkbox" name="strong agree"> 4
+            </td>
+        </tr>
+        <tr>
+            <td>you would recommend our froducts to a friend or coworker</td>
+            <td>
+                <input type="checkbox" name="strongly disagree"> 1
+            </td>
+            <td>
+                <input type="checkbox" name="disagree"> 2
+            </td>
+            <td>
+                <input type="checkbox" name="agree"> 3
+            </td>
+            <td>
+                <input type="checkbox" name="strong agree"> 4
+            </td>
+        </tr>
+    </table><br>
+    <input type="submit" name="submit" value="submit">
+</body>
+</html>
